@@ -943,7 +943,7 @@ async function analisarCupom() {
 }
 Se não conseguir identificar algum campo, use string vazia. Para data, use a data de hoje se não encontrar: ${new Date().toISOString().split('T')[0]}.`;
 
-    const resp = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${config.apiKey}`, {
+    const resp = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key=${config.apiKey}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
